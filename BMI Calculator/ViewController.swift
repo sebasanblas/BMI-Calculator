@@ -42,9 +42,31 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let x : Double? = Double(weightField.text!)
         let y : Double? = Double(heightField.text!)
         guard x != nil && y != nil else {
-            print("Error")
-               return
+            print("Error, input invalid")
+            let alert = UIAlertController(title: "Error",
+                                          message: "You must enter valid values",
+                                          preferredStyle: .alert)
+            
+            let okAction = UIAlertAction(title: "OK", style: .default) { (action) in }
+            
+            alert.addAction(okAction)
+            present(alert, animated: true, completion: nil)
+            
+            return
             }
+        guard y != 0 else {
+            print("Error with 0")
+            let alert = UIAlertController(title: "Error",
+                                          message: "Cannot perform calculation with height equal to 0",
+                                          preferredStyle: .alert)
+            
+            let okAction = UIAlertAction(title: "OK", style: .default) { (action) in }
+            
+            alert.addAction(okAction)
+            present(alert, animated: true, completion: nil)
+            
+            return
+        }
         let result = calculateBMI(weight: x!, height: y!)
         outputBMIField.text = String(format: "%.2f", result)
         switch result {
