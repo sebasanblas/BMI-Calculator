@@ -1,9 +1,9 @@
 # BMI CALCULATOR
 
 <p float="center">
-  <img src="Screenshots/1.png" width="300" />
-  <img src="Screenshots/2.png" width="300" /> 
-  <img src="Screenshots/3.png" width="300" />
+  <img src="Screenshots/1.png" width="250" />
+  <img src="Screenshots/2.png" width="250" /> 
+  <img src="Screenshots/3.png" width="250" />
 </p>
 
 ## More info about BMI and Nutrition status
