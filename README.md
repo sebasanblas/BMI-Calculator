@@ -6,7 +6,7 @@
   <img src="Screenshots/3.png" width="250" />
 </p>
 
-## More info about BMI and Nutrition status
+## More info about BMI and Nutritional status
 
 [World Health Organization](https://www.euro.who.int/en/health-topics/disease-prevention/nutrition/a-healthy-lifestyle/body-mass-index-bmi)
 
